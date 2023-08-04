@@ -8,3 +8,10 @@
     <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-danger btn-sm" %>
   </div>
 </div>
+
+<div class="container">
+  <%= render 'comments/form', post: @post %>
+  <% @comments.each do |comment| %>
+    <%= render 'comments/comment', post: @post, comment: comment %>
+  <% end %>
+</div>
