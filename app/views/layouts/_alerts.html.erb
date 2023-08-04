@@ -1,0 +1,14 @@
+
+<% if notice %>
+  <div class='container'>
+    <div class="alert alert-success" role="alert">
+    <p class="notice"><%= notice %></p>
+    </div>
+  </div>
+<% elsif alert %>
+  <div class='container'>
+    <div class="alert alert-danger" role="alert">
+    <p class="alert"><%= alert %></p>
+    </div>
+  </div>
+<% end %>

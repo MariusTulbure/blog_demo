@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+User.create(email: 'marius@themoc.ro', password: 'qqqqqq')
+
+10.times do |post|
+  Post.create(title: "Title #{post}", body: "#{post} predefined posts for testing the blog", user_id: User.first.id)
+end
