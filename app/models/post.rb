@@ -6,4 +6,11 @@ class Post < ApplicationRecord
 
   has_noticed_notifications model_name: 'Notification'
   has_many :notifications, through: :user, dependent: :destroy
+  # before_commit :ransackable_attributes
+  # ransack_alias :all_search, :querry
+
+  # def self.ransackable_attributes(auth_object = nil)
+  #   querry = ["body", "title", "user_email", "user_name"]
+  # end
 end
+
