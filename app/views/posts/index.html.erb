@@ -2,6 +2,13 @@
 <div class="container">
   <h1>Posts</h1>
 
+  <%= search_form_for(@q, url: :posts, class:'d-flex') do |f| %>
+    <%= f.search_field :body_cont, placeholder: "Search body", class: "form-control me-2" %>
+
+    <%= f.submit "Search!", class: "btn btn-primary btn-lg" %>
+  <% end %>
+  <br/>
+
   <div id="posts">
     <% @posts.each do |post| %>
       <%= render post %>

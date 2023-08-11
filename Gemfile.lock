@@ -82,6 +82,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    coderay (1.1.3)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
@@ -159,6 +160,9 @@ GEM
       http (>= 4.0.0)
       rails (>= 5.2.0)
     orm_adapter (0.5.0)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     public_suffix (5.0.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -265,6 +269,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   noticed (~> 1.6)
+  pry
   puma (~> 5.0)
   rails (~> 7.0.6)
   ransack (~> 4.0)

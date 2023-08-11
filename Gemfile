@@ -78,3 +78,5 @@ gem 'image_processing', '~> 1.2'
 gem "noticed", "~> 1.6"
 
 gem "ransack", "~> 4.0"
+
+gem 'pry'
